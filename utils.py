@@ -4,7 +4,8 @@ from torch.utils.data import DataLoader
 from torchvision import utils
 
 import data_config
-from datasets.CD_dataset import CDDataset
+import sys  
+from dataset.CD_dataset import CDDataset
 
 
 def get_loader(data_name, img_size=256, batch_size=8, split='test',
